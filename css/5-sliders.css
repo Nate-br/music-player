@@ -1,0 +1,74 @@
+/* Progress row */
+.progress-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+/* Time display */
+.time {
+  font-size: 0.7rem;
+  color: #b3b3b3;
+  min-width: 36px;
+}
+
+.time:last-child {
+  text-align: right;
+}
+
+/* Progress track */
+.progress-wrap {
+  flex: 1;
+}
+
+/* Shared slider styles */
+.progress-bar,
+.volume-bar {
+  width: 100%;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* WebKit thumb — hidden till hovered */
+.progress-bar::-webkit-slider-thumb,
+.volume-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+  margin-top: -4px;
+}
+
+/* Show thumb on hover */
+.progress-wrap:hover .progress-bar::-webkit-slider-thumb,
+.volume-bar:hover::-webkit-slider-thumb {
+  opacity: 1;
+}
+
+/* Firefox thumb */
+.progress-bar::-moz-range-thumb,
+.volume-bar::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  border: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.progress-wrap:hover .progress-bar::-moz-range-thumb,
+.volume-bar:hover::-moz-range-thumb {
+  opacity: 1;
+}

@@ -1,0 +1,16 @@
+/* Tablet and below */
+@media (max-width: 900px) {
+  .sidebar { display: none; }
+  .player-content { flex-direction: column; padding: 24px 20px; gap: 32px; }
+  .album-art-wrapper { width: 240px; height: 240px; }
+  .track-section { max-width: 100%; width: 100%; }
+  .song-title { font-size: 1.5rem; }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .player-content { padding: 16px; gap: 24px; }
+  .album-art-wrapper { width: 180px; height: 180px; }
+  .song-title { font-size: 1.2rem; }
+  .volume-bar { width: 70px; }
+}

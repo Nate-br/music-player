@@ -1,0 +1,37 @@
+/* Bottom controls */
+.extra-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Volume group */
+.volume-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Volume slider width */
+.volume-bar {
+  width: 100px;
+}
+
+/* Autoplay toggle */
+.autoplay-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #b3b3b3;
+  font-size: 0.75rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.autoplay-toggle input {
+  accent-color: #1DB954;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}

@@ -1,0 +1,49 @@
+/* Playback controls */
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+/* Base button */
+.control-btn {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  cursor: pointer;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.control-btn:hover {
+  color: #fff;
+}
+
+/* Icon size */
+.control-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Play/pause button */
+.play-control {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s;
+}
+
+.play-control:hover {
+  transform: scale(1.06);
+  color: #000;
+}
